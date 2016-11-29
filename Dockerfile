@@ -1,9 +1,9 @@
 FROM java:8
 MAINTAINER Docker Training <boris.slavin@mheducation.com>
-COPY src /home/root/javahelloworld/src
+COPY src /home/root/javahelloworld_github.com/src
 ENV FOO bar
 ENV JAVA_HOME /usr/bin/java
-WORKDIR /home/root/javahelloworld
+WORKDIR /home/root/javahelloworld_github.com
 RUN mkdir bin
 RUN javac -d bin src/HelloWorld.java
 RUN wget cnn.com
